@@ -24,7 +24,9 @@ class _HomePageState extends State<HomePage> {
     UserHome(),
     UserSearch(),
     UserShop(),
-    UserAccount()
+    UserAccount(
+      name: 'name',
+    )
   ];
 
   @override
