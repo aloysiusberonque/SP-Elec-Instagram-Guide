@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:instagramuiclone/pages/account.dart';
 import 'package:instagramuiclone/pages/home.dart';
-import 'package:instagramuiclone/pages/notification.dart';
+import 'package:instagramuiclone/pages/shop.dart';
 import 'package:instagramuiclone/pages/search.dart';
 
 class HomePage extends StatefulWidget {
@@ -23,7 +23,7 @@ class _HomePageState extends State<HomePage> {
   final List<Widget> children = [
     UserHome(),
     UserSearch(),
-    UserNotification(),
+    UserShop(),
     UserAccount()
   ];
 
@@ -44,8 +44,7 @@ class _HomePageState extends State<HomePage> {
                 ),
                 label: 'home'),
             BottomNavigationBarItem(icon: Icon(Icons.search), label: 'search'),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.favorite), label: 'notificaton'),
+            BottomNavigationBarItem(icon: Icon(Icons.shop), label: 'shop'),
             BottomNavigationBarItem(icon: Icon(Icons.person), label: 'account'),
           ]),
     );
